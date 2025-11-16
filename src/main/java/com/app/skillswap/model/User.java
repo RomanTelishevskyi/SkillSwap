@@ -10,8 +10,8 @@ import jakarta.persistence.Table;
 public class User {
 
     @Id
-    @Column(name = "email")
-    private String email;
+    @Column(name = "user_email")
+    private String user_email;
 
     private String password_hash;
 
@@ -20,11 +20,11 @@ public class User {
     private String username;
 
     public String getEmail() {
-        return email;
+        return user_email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String user_email) {
+        this.user_email = user_email;
     }
 
     public String getPassword_hash() {
@@ -51,8 +51,8 @@ public class User {
         this.username = username;
     }
 
-    public User(String email, String password_hash, String picture, String username) {
-        this.email = email;
+    public User(String user_email, String password_hash, String picture, String username) {
+        this.user_email = user_email;
         this.password_hash = password_hash;
         this.picture = picture;
         this.username = username;

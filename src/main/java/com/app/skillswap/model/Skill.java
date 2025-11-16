@@ -10,17 +10,17 @@ import jakarta.persistence.Table;
 public class Skill {
 
     @Id
-    @Column(name = "name")
-    private String name;
+    @Column(name = "skill_name")
+    private String skill_name;
 
     private String type;
 
     public String getName() {
-        return name;
+        return skill_name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.skill_name = skill_name;
     }
 
     public String getType() {
@@ -31,8 +31,8 @@ public class Skill {
         this.type = type;
     }
 
-    public Skill(String name, String type) {
-        this.name = name;
+    public Skill(String skill_name, String type) {
+        this.skill_name = skill_name;
         this.type = type;
     }
 

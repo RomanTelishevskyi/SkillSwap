@@ -1,0 +1,5 @@
+FROM postgres:18
+
+ENV POSTGRES_DB=skill_swap
+ENV POSTGRES_USER=user
+ENV POSTGRES_PASSWORD=password

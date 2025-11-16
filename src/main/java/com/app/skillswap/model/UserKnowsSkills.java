@@ -11,28 +11,26 @@ public class UserKnowsSkills {
 
     @ManyToOne
     @MapsId("user_email")
-    @JoinColumn(name = "email", referencedColumnName = "email")
-    private User user_email;
+    private User user;
 
     @ManyToOne
     @MapsId("skill_name")
-    @JoinColumn(name = "skill_name", referencedColumnName = "name")
-    private Skill skill_name;
+    private Skill skill;
 
-    public Skill getSkill_name() {
-        return skill_name;
+    public Skill getSkill() {
+        return skill;
     }
 
-    public void setSkill_name(Skill skill_name) {
-        this.skill_name = skill_name;
+    public void setSkill(Skill skill) {
+        this.skill = skill;
     }
 
-    public User getUser_email() {
-        return user_email;
+    public User getUser() {
+        return user;
     }
 
-    public void setUser_email(User user_email) {
-        this.user_email = user_email;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public UserSkillsId getId() {
@@ -43,10 +41,10 @@ public class UserKnowsSkills {
         this.id = id;
     }
 
-    public UserKnowsSkills(UserSkillsId id, User user_email, Skill skill_name) {
+    public UserKnowsSkills(UserSkillsId id, User user, Skill skill) {
         this.id = id;
-        this.user_email = user_email;
-        this.skill_name = skill_name;
+        this.user = user;
+        this.skill = skill;
     }
 
     public UserKnowsSkills() {
