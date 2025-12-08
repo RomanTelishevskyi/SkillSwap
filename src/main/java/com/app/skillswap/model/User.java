@@ -1,5 +1,6 @@
 package com.app.skillswap.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,6 +14,7 @@ public class User {
     @Column(name = "user_email")
     private String user_email;
 
+    @JsonIgnore
     private String password_hash;
 
     private String picture;
