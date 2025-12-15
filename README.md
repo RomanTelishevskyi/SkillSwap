@@ -1,1 +1,0 @@
-It's a web-application in which the main idea is that our users write what they can teach other users (x) and what they want to learn (y) and when we have a match between them we will create a chat with them.
